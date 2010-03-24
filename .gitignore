@@ -1,0 +1,8 @@
+*.exe
+*.exe.manifest
+*.suo
+*.pdb
+*.application
+*.user
+obj/
+bin/
