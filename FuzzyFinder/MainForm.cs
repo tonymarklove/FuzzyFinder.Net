@@ -155,13 +155,13 @@ namespace FuzzyFinder
 
         private void runFinder(Object obj)
         {
-            TextBox cb = cmdLine;
+            string line = cmdLine.Text.Trim();
 
-            if (cb.Text.Length < 1)
+            if (line.Length < 1)
             {
                 return;
             }
-            string msg = pipes[pipe].RunFinder((cb.Text).Trim());
+            string msg = pipes[pipe].RunFinder(line);
             msg = msg.Trim();
             string[] arr = msg.Split('\n');
 
