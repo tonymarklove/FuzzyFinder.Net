@@ -307,9 +307,9 @@ namespace FuzzyFinder
             if (button.Checked == true)
             {
                 pipe = UInt32.Parse((string)button.Tag);
+                selectedRadio = button;
                 if (pipes[pipe] == null)
                 {
-                    selectedRadio = button;
                     ChangeDirectory();
                 }
                 else
